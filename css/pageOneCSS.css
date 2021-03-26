@@ -1,0 +1,1132 @@
+<*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    perspective: 500px;
+    background-image: url("../images/full-background.png");
+}
+/* start header */
+
+.header{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/test.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 171% ;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    box-shadow:1px 4px 25px #130011
+}
+.opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+#logo{   /* box fo the logo */
+    width: 10%;
+    float:left;
+    display: inline;
+    padding: 10px;
+}
+#logo-list{
+    display: none;
+}
+/* End the box logo*/ 
+.header-inner ul{/* Start the bar navigation */
+    width: 50%;
+    float: left;
+    display: inline;
+    padding-top: 5px;
+    margin-left: 10%
+}
+.header-inner ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 30px;
+}
+.header-inner a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.home{
+    font-weight: 600;
+    border: 5px;
+    border-bottom: #0d8eff solid 2px;
+}
+.header-inner a:hover{
+    border-bottom:2px solid #df4d4d ;
+}
+/* End the bar navigation */
+.buttom-sign{/* Start the buttom login */
+    width: 20%;
+    display: inline;
+    float: right;
+    padding-top: 17px;
+}
+.buttom-sign > button{
+    background: none;
+    color: white;
+    width: 100px;
+    margin-left: 5px;
+    border-radius: 15px;
+    border: 2px solid #0d8eff ;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+.buttom-sign > button:hover{
+    background-color: #0d8eff;
+}/* End for the buttom login */
+.header-inner-header{ /* Start the heding */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left:26%;
+    float: none;
+    display: inline;
+}
+h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+p{
+    font-size: 17px;
+}
+/*End the header-inner-header */
+
+/* End header */
+
+/* Start anime */
+.anime{
+    background: transparent;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.line-one{
+    margin: 60px auto 0 auto;
+    width: 200px;
+    height: 17px;
+    background-color: #0e0b0bcc;
+    border-radius: 25px;
+}
+.anime h1,.manga h1,.webtoon h1{
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 90px;
+}
+.anime-elements{
+    margin: auto;
+    width: 100%;
+    height: 70%;
+    padding:0 100px 0 100px ;   
+}
+/* Strat the div "wallpaper-anime"*/
+.wallpaper-anime{
+    width: 30%;
+    height: 95%;
+    float: left;
+    position: relative;
+    border-radius: 10px;
+    transition: all .8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 3px 2px 23px #8e54c5e0,
+                -3px -2px 23px #8e54c5e0;
+    overflow: hidden;
+    margin: 0 3% 0 -5% 
+}
+/* Start style div "wallpaper-anime-front" */
+.wallpaper-anime-front{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/anime-background.jpg");
+    background-repeat: no-repeat;  
+    background-size:cover;
+    background-position: center;
+    border-radius:10px ;
+    transition: all 1s ease-in .5s;
+    z-index: 2;
+    color: #fff;
+}
+.wallpaper-anime-front-opacity,.amv-front-opacity,.watching-front-opacity{
+    width: 80%;
+    height: 80%;
+    margin:13% 10% 10% 10%;
+    background-color: #0505054a;
+    box-shadow: 0px 0px 83px 7px #000000cf,
+                -0px -0px 83px 7px #000000cf;
+}
+.wallpaper-anime-front-content h2,.amv-front-content h2,.watching-front-content h2{
+    line-height: 2;
+}
+.wallpaper-anime-front-content h3,.amv-front-content h3,.watching-front-content h3{
+    line-height: 15;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.wallpaper-anime-front-content p,.amv-front-content p,.watching-front-content p{
+    font-size: 17px;
+    margin-top: 72px;
+    font-weight: 600;
+}
+.wallpaper-anime-front-content h3:hover{
+    color: #8e54c5e0;
+    text-decoration: underline;
+}
+/* End "wallpaper-anime-front" */
+.wallpaper-anime-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+/* End the div "wllpaper" */
+
+/* Start the div "AMV" */
+.amv{
+    width: 30%;
+    height: 95%;
+    float: left;
+    position: relative;
+    border-radius: 10px;
+    transition: all .8s ease-in-out ;
+    box-shadow: 2px 2px 23px #dc647acf,
+                -2px -2px 23px #dc647acf;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 1s ease-in;
+    margin: 0 3% 0 0%
+}
+.amv-front{
+    background-image: url("../images/anime-background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+    transition: all 1s ease-in .5s;
+    z-index: 2;
+    background-position: center;
+}
+.amv-front-content,.watching-front-content{
+    color: #fff;
+}
+.amv-front-content h3{
+    line-height: 13;
+}
+.amv-front-content h3:hover{
+    color:#995839;
+    text-decoration: underline;
+}
+/* End the div "AMV"*/
+
+/* Start the div "warching" */
+.watching{
+    margin-right: 56.1px;
+    width: 30%;
+    height: 95%;
+    float: right; 
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 30px #f6f2a2,
+                -3px -3px 30px #f6f2a2;
+    transition: all 1s ease-in;
+    overflow: hidden;
+    float: left;
+}
+.watching-front{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+    transition: all 1s ease-in .5s;
+    z-index: 2;
+    background-image:url("../images/anime-background3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.watching-front-content h3:hover{
+    color:#34aeab;
+    text-decoration: underline;
+}
+/* End "watching"*/
+
+/* start hover to */
+
+.wallpaper-anime:hover,.amv:hover,.watching:hover{
+    transform:scale(1.070);
+}
+.wallpaper-anime-front:hover,.amv-front:hover,.watching-front:hover{
+    transform: translateX(100%);
+    
+}
+/* End the element-anime */
+
+/*start the div "manga" */
+/*start the "element-manga" */
+
+.manga{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    position: relative;
+}
+.manga-element{
+    position: relative;
+    width: 91%;
+    height: 70%;
+    margin: auto;
+}
+.manga-element > div{
+    width: 28%;
+    height: 95%;
+    float: left;
+    position: relative;
+    margin-top: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+    color:#fff
+}
+.learn-manga{
+    margin-left: 40px;
+    box-shadow: 4px 3px 33px #fd2846de,
+                -4px -3px 33px #fd2846de;
+}
+.learn-manga-front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/manga-background.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all 1s ease-in-out .5s;
+}
+.drawing{
+    margin-left: 53px;
+    box-shadow: 3px 3px 30px #000000d9,
+                -3px -3px 30px #000000d9;
+}
+.drawing-front{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url("../images/manga-background2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out .5s;
+}
+.student{
+    margin-left: 62px;
+    box-shadow: 7px 6px 31px #6db9d9,
+                -7px -6px 31px #6db9d9;
+}
+.student-front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/manga-background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out .5s;
+}
+.manga-opacity{
+    width: 80%;
+    height: 80%;
+    background: #0505054a;
+    margin: 57px auto;
+    box-shadow: 0px 0px 41px 23px #000000cf;
+}
+.manga-opacity p{
+    font-weight: 600;
+    margin-top: 84px;
+}
+.manga-opacity h3{
+    line-height: 12;
+}
+/* all hover for manga space  start */
+.manga-element > div:hover{
+    transform:scale(1.070);
+}
+.learn-manga-front > .manga-opacity h3:hover{
+    color: #3bdff6;
+    text-decoration: underline;
+}
+.drawing-front > .manga-opacity h3:hover{
+    color: #e23f3d;
+    text-decoration: underline;
+}
+.student-front > .manga-opacity h3:hover{
+    color: #9ded4d;
+    text-decoration: underline;
+}
+.learn-manga-front:hover,.drawing-front:hover,.student-front:hover{
+    transform: translateX(100%);
+}
+/* End the the hover manga space*/  
+/* End the div "element-manga" */
+/* End the div "manga" */
+
+/* start the style for webtoon space */
+.webtoon{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+}
+.webtoon-element{
+    position: relative;
+    width: 91%;
+    height: 80%;
+    margin: auto;
+}
+.webtoon-element > div{
+    width: 30%;
+    height: 95%;
+    float: left;
+    margin-left: 160px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+    color: #fff;
+}
+.learn-webtoon{
+    box-shadow: -3px -3px 30px #c25749,
+                -3px -3px 30px #c25749;
+}
+.learn-webtoon-front{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/webtoon-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    padding: 1px;
+    transition: all 1s ease-in-out .5s;
+}
+.webtoon-opacity{
+    width: 80%;
+    height: 80%;
+    background: #05050573;
+    margin: 50px auto;
+    box-shadow: 0px 0px 25px 20px #000000cf, 
+                0px 0px 25px 20px #000000cf;
+}
+.drawing-webtoon-front{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/webtoon-background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+    transition: all 1s ease-in-out .5s;
+    border-radius: 10px;
+}
+.drawing-webtoon{
+    padding: 1px;
+    box-shadow: 5px 5px 30px #262222f0,
+                -5px -5px 30px #262222f0;
+}
+.webtoon-element > div  p{
+    margin-top: 115px;
+}
+.webtoon-element > div  h3{
+    line-height: 12;
+}
+/* hover to div "webtoon" */
+.webtoon-element > div:hover{
+    transform:scale(1.070);
+}
+.drawing-webtoon-front h3:hover{
+    color:#fc5454d9;
+    text-decoration: underline;
+}
+.learn-webtoon-front h3:hover{
+    color: #76a2be;
+    text-decoration: underline;
+}
+.learn-webtoon-front:hover,.drawing-webtoon-front:hover{
+    transform: translateX(100%);
+}
+/* End to div "webtoon" */
+
+/* Start the final div "end" */
+.end{
+    margin-top: 65px;
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+    background-color: #343a40e6;
+    position: relative;
+    color: #fff
+}
+.end ul li span{
+    font-size: 29px;
+    font-family: Barlow;
+    color: #0265ff;
+    border-bottom:  2px solid #00000082;
+}
+.end >div {
+    display: inline;
+    float: left;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.end a{
+    color: #fff;
+    text-decoration: none;
+    font-size:17px;
+}
+.end ul li a:hover{
+    border-bottom: 2px solid #ff2b36;
+}
+.end > ul {
+    float: left;
+    margin-left: 70px;
+}
+.end ul li{
+    margin-top: 10px; 
+    list-style: none;
+}
+/* End the div "end" */
+
+/* Start the div for social media */
+.social-media{
+    width: 50%;
+    height:auto;
+    float: right;
+    overflow: hidden;
+}
+.social-media > div{
+    width: 30%;
+    font-size: 120px;
+    display: inline-block;
+    background: #000000a8;
+    text-align: center;
+    opacity: .6;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 3px solid #000000ab;
+}
+/* End the div "social media" */
+
+/* Start the div "copyreight" */
+.copyreight{
+    width: 100%;
+    height:90px;
+    background: #282a2cde;
+    overflow: hidden;
+}
+.copyreight #place{
+    display: inline;
+    color:#fff;
+    line-height: 6;
+    margin-left: 50px
+}
+.copyreight h4{
+    display: inline;
+    color: #000000a1;
+    margin-left: 61%
+}
+/* End the div "copyreight"  */
+    
+/* Strat the autre screen */
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 400px;
+    }
+        .header-inner  ul {
+        width: 90%;
+        position: absolute;
+        top: 36px;
+        left: -70px;
+        background-color: #282323e3;
+        z-index: 2;
+        border-radius: 10px;
+        padding-left: 53px;
+        display: none;
+    }
+    #logo-list{
+        padding: 10px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color:#2d2828e6;
+        opacity: .8;
+        font-size: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; 
+    }
+    #logo-list:visited{
+        background-color: #ffffffac;
+        text-decoration: none;
+        color: #000;
+    }
+    .header-inner ul li{
+        display: block;
+        margin-top: 13px;
+        border: 2px solid #000000b3;
+        width: 50%;
+        padding: 5px;
+    }
+    .header-inner ul li .home{
+        border:0;
+    }
+    #logo{
+        width: 130px;
+        margin: auto;
+        padding-top: 6px;
+        float: none;
+        display: block;
+    }
+    .header-inner .buttom-sign{
+        display: none;
+        float: none;
+    }
+    .header-inner p{
+        width: 150%;
+        margin-left: -20%;
+    }
+    /* End the header */
+    /* Star Edit anime */
+    .anime{
+        height: 1800px;
+        overflow: visible;
+    }
+    .anime-elements{
+        height: 100%;
+        padding: 0
+    }
+    .anime .anime-elements > div{
+        height: 30%;
+        width: 78%;
+        margin: 0 10% 10%;
+        float: left;
+    }
+    .anime .anime-elements > div > div {
+        background-position: center;
+    }
+    .anime .anime-elements > div h3{
+        display: none
+    }
+    .amv{
+        width: 78%;
+        height: 30%;
+        margin: 0 2% 0% 10%
+    }
+    .watching{
+        width: 78%;
+        height: 30%;
+        margin: 7% 0% 0% 10%
+    }
+     /* End anime */
+     /*  Start edit manga    */
+     .manga{
+        height: 2000px;
+        overflow:hidden;
+    }
+    .manga-element{
+        position:absolute;
+        height: 70%;
+        width: 100%
+    }
+    .manga .manga-element > div{
+        height: 40%;
+        width: 78%;
+        margin: 30px auto;
+        float: none;
+    }
+    .manga .manga-elements > div > div {
+        background-position: center;
+    }
+    .manga .manga-element > div h3{
+        display: none
+    }
+    /*  End manga  */
+
+    /* Star edit webtoon */
+     .webtoon{
+        height: 1145px;
+        margin-top: -30px 
+    }
+    .webtoon-element{
+        height: 105%;
+        width: 100%
+    }
+    .webtoon .webtoon-element > div{
+        height: 48%;
+        width: 79%;
+        margin: 30px auto;
+        float: none;
+    }
+    .webtoon .webtoon-element > div > div {
+        background-position: center;
+    }
+    .webtoon .webtoon-element > div h3{
+        display: none
+    }
+    /* End webtoon */
+    /* start div "End" */
+    .end{
+        margin-top: 310px;
+        overflow: hidden;
+        height:auto;
+        max-height: 700px
+    }
+    .end > ul {
+        float: left;
+        margin: 0;
+
+    }
+    .end > div {
+        margin: 0;
+    }
+    .end .social-media{
+        width: 82%
+    }
+    .end .social-media > div{
+        font-size:80px;
+    }
+    /* End the div "End"*/ 
+    /* Start copyreight */
+    .copyreight{
+        overflow: hidden;
+        height:70px;
+        max-height: 90px
+    }
+    .copyreight  #place{
+        margin-left: 3%;
+        display: none
+    }
+    .copyreight h4{
+        margin-left: 3%;
+        font-size: 90%;
+        line-height: 5;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .header{
+        height: 500px;
+    }
+        .header-inner  ul {
+        width: 80%;
+        position: absolute;
+        top: 36px;
+        left: -70px;
+        background-color: #282323e3;
+        z-index: 2;
+        border-radius: 10px;
+        padding-left: 53px;
+        display: none;
+    }
+    #logo-list{
+        padding: 10px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color:#2d2828e6;
+        opacity: .8;
+        font-size: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; 
+    }
+    #logo-list:visited{
+        background-color: #ffffffac;
+        text-decoration: none;
+        color: #000;
+    }
+    .header-inner ul li{
+        display: block;
+        margin-top: 13px;
+        border: 2px solid #000000b3;
+        width: 50%;
+        padding: 5px;
+    }
+    .header-inner ul li .home{
+        border:0;
+    }
+    #logo{
+        width: 130px;
+        margin: auto;
+        padding-top: 6px;
+        float: none;
+        display: block;
+    }
+    .header-inner .buttom-sign{
+        display: none
+    }
+    .amv{
+        width: 75%;
+        height: 37%;
+        margin: 7% 2% 0% 10%
+    }
+    .watching{
+        width: 75%;
+        height: 37%;
+        margin: 7% 0% 0% 10%
+    }
+    @media (min-width: 720px){
+        .header-inner .buttom-sign{
+        width: 30%;
+        display: block;
+        position: absolute;
+        left: 69%;
+        top: 0%;
+        float: right;
+        }
+    }
+    .header-inner p{
+        width: 150%;
+        margin-left: -20%;
+    }
+    /* End the header */
+    /* Star Edit anime */
+    .anime{
+        height: 1800px;
+        overflow: visible;
+    }
+    .anime-elements{
+        height: 100%;
+        padding: 0
+    }
+    .anime .anime-elements > div{
+        width: 75%;
+        height: 37%;
+        margin: 7% 2% 0% 10% 
+    }
+    .anime .anime-elements > div > div {
+        background-position: center;
+    }
+    .anime .anime-elements > div h3{
+        line-height: 34
+    }
+     /* End anime */
+     /*  Start edit manga    */
+     .manga{
+        height: 1800px;
+        overflow:visible;
+    }
+    .manga-element{
+        height: 85%;
+        width: 100%
+    }
+    .manga .manga-element > div{
+        height: 39%;
+        width: 78%;
+        margin: 50px auto;
+        float: none;
+    }
+    .manga .manga-elements > div > div {
+        background-position: center;
+    }
+    .manga .manga-element > div h3{
+        display: none
+    }
+    /*  End manga  */
+
+    /* Star edit webtoon */
+     .webtoon{
+        height: 1000px;
+        margin-top: 700px 
+    }
+    .webtoon-element{
+        height: 90%;
+        width: 100%
+    }
+    .webtoon .webtoon-element > div{
+        height: 70%;
+        width: 79%;
+        margin: 6% auto;
+        float: none;
+    }
+    .webtoon .webtoon-elements > div > div {
+        background-position: center;
+    }
+    .webtoon .webtoon-element > div h3{
+        display: none
+    }
+    /* End webtoon */
+    /* start div "End" */
+    .end{
+        margin-top: 500px;
+        overflow: hidden;
+        height:auto;
+        max-height: 700px
+    }
+    .end > ul {
+        float: left;
+        margin: 0;
+
+    }
+    .end > div {
+        margin: 0;
+    }
+    .end .social-media{
+        width: 82%
+    }
+    .end .social-media > div{
+        font-size:80px;
+    }
+    /* End the div "End"*/ 
+    /* Start copyreight */
+    .copyreight{
+        overflow: hidden;
+        height:70px;
+        max-height: 90px
+    }
+    .copyreight  #place{
+        margin-left: 3%;
+        float: none
+    }
+    .copyreight h4{
+        margin-left: 0;
+        text-align: right;
+        margin-right: 3%;
+        font-size: 90%;
+        line-height: 3;
+        float: right;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header{
+        height: 500px
+    }
+    .buttom-sign{
+        width: 28%;
+    }
+    .header-inner ul{
+        width:59%
+    }
+    .header-inner ul li{
+        margin-left: 3%
+    }
+    #logo{
+        width: 0
+    }
+    /* Start the Edit for anime */
+    .anime{
+        height: 1500px
+    }
+    .anime-elements{
+        height: 51%;
+        position: absolute;
+    }
+    .anime-elements > div{
+        width: 45%;
+        height: 80%;
+    }
+    .watching{
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        margin-right: 0
+    }
+    .anime-elements > div > div{
+        background-position: center;
+    }
+    .anime-elements > div > div h3{
+        line-height: 25
+    }
+    .amv{
+        width: 45%;
+        height: 80%;
+        margin: 0 0 0 3%
+    }
+    /* End the Edit for anime space */
+
+    /* Start the Edit for manga Space */
+    .manga{
+        height: 1400px
+    }
+    .manga-element{
+        height: 52%;
+        padding: 0 100px 0 100px;
+        width: 100%
+    }
+    .learn-manga{
+        margin: 0;
+    }
+    .manga-element > div > div {
+        background-position: center;
+    }
+    .manga-element > div{
+        width: 45%;
+        height: 80%;
+    }
+    .student{
+        margin: 10% 25% 0 25% !important;
+        width: 50% !important
+    }
+    /* End the Edit for manga */
+
+    /* Start the Edit for webtoon */
+    .webtoon{
+        width: 100%;
+        height: 800px
+    }
+    .webtoon-element{
+        height: 80%;
+        width: 100%;
+    }
+    .webtoon-element > div {
+        width: 35%;
+        margin-left: 10%;
+    }
+    .webtoon-element > div > div{
+        background-position: center;
+    } 
+    /* End the Edit for the manga */ 
+
+    /* Start the Edit for the End */
+    .end{
+        overflow: hidden;
+        max-height: 500px;
+        height: 420px;
+        margin-top: 50px;
+    }
+    .social-media{
+        float: right !important;
+        width: 55%
+    }
+    /* End the Edit for End */
+
+    /* Start the Edit for copyright space */
+    .copyreight #place{
+        line-height: 3;
+        float: left;
+        margin-left: 10%
+    }
+    .copyreight h4{
+        float: right;
+        line-height: 3;
+        margin-right: 3%;
+        margin-left: 0 !important
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1183px){
+    #logo {
+        width: 20%
+    }
+    .header-inner ul{
+        width: 51%
+    }
+    .watching{
+        margin-right: 46.1px
+    }
+    .webtoon-element > div {
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 35%
+    }
+    .end{
+        overflow: hidden;
+        max-height: 500px;
+        height: 420px;
+    }
+    .social-media{
+        float: right !important;
+        width: 55%
+    }
+    .copyreight #place{
+        line-height: 3;
+        float: left;
+        margin-left: 10%
+    }
+    .copyreight h4{
+        float: right;
+        line-height: 3;
+        margin-right: 3%;
+        margin-left: 0 !important
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .end{
+        overflow: hidden;
+        max-height: 500px;
+        height: 420px;
+    }
+    .social-media{
+        float: right !important;
+        width: 55%;
+    }
+    .copyreight #place{
+        line-height: 3;
+        float: left;
+        margin-left: 10%
+    }
+    .copyreight h4{
+        float: right;
+        line-height: 3;
+        margin-right: 3%;
+        margin-left: 0 !important
+    }
+} 
+
+
+
+
+/* Start my frameWork  */ 
+
+
+/* End my frameWork
